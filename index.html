@@ -1,30 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Yassir Barchi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+  <meta name="description" content="Yassir is a passionate software developer based in Paris." />
+  <meta name="keywords"
+    content="Swift, SwiftUi, iOS, Objective-C, VueJs, Xcode, Flutter, Js, Javascript, Developer Paris, Passionate Developer, Developer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://yassir.dev/" />
+  <meta name="theme-color" content="#2c82c9">
+  <meta property="og:title" content="Yassir Barchi" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yassir.dev/" />
+  <meta property="og:description" content="Yassir is a passionate software developer based in Paris." />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@yacir26">
+  <meta name="twitter:title" content="Yassir Barchi">
+  <meta name="twitter:description" content="Yassir is a passionate software developer based in Paris.">
+  <meta name="twitter:creator" content="@yacir26">
+
+  <link href="https://fonts.googleapis.com/css?family=Blinker:300,600,700&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: "Blinker", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
       font-size: calc(10px + 0.33vw);
       -webkit-font-smoothing: antialiased;
       padding: 5vh 10vw;
-      color: #121314;
+      color: #24252a;
     }
+
+    body::before {
+      content: "";
+      width: 100%;
+      height: 10px;
+      background: #2c82c9;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: -1;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 4em;
+      margin-bottom: 20px;
+      color: #2c82c9;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.3em;
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+
     p {
       font-size: 1.6em;
       font-weight: 300;
       line-height: 1.4;
-      max-width: 26em;
+      max-width: 27em;
+    }
+
+    a * {
+      transition: all 0.1s ease-out;
+    }
+
+    a.text-link {
+      color: inherit;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+    }
+
+    a.text-link::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to top,
+        rgba(107, 185, 240, 0.4) 15%,
+        rgba(0, 0, 0, 0) 30%);
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      z-index: -1;
+      will-change: width;
+      transform: rotate(-2deg);
+      transform-origin: left bottom;
+      transition: width 0.1s ease-out;
+    }
+
+    a.text-link:hover {
+      color: #2c82c9;
+    }
+
+    a.text-link:hover::before {
+      width: 0%;
+      transition-duration: 0.15s;
+    }
+
+    a.icon-link:hover svg {
+      fill: #2c82c9;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      margin-top: 10px;
+      flex-direction: row;
+    }
+
+    ul li {
+      margin-right: 10px;
+    }
+
+    svg.icon {
+      width: 32px;
+      height: 32px;
+      fill: #24252a;
     }
   </style>
 </head>
+
 <body>
-  <p style="font-weight:500; font-size:2.2em">
-    Coming soon.
-  </p>
+  <main>
+    <section>
+      <h1>Hi, I'm Yassir</h1>
+      <p>
+        I'm a passionate software developer at
+        <a class="text-link" href="https://numberly.com/" target="_blank">Numberly</a>, based in Paris.
+      </p>
+      <p>
+        Previously, I worked at
+        <a class="text-link" href="https://www.accengage.com/" target="_blank">Accengage</a>
+        and
+        <a class="text-link" href="https://www.deezer.com/" target="_blank">Deezer</a>
+        as an iOS developer and a team lead.
+      </p>
+      <p>
+        I love to experiment with new technologies and to discover new open
+        source projects. Take a look to my
+        <a class="text-link" href="https://bit.ly/2YGEGCb" target="_blank" title="Follow me on Github">Github</a>.
+      </p>
+    </section>
+    <section>
+      <h3>Get In Touch</h3>
+      <ul>
+        <li>
+          <a class="icon-link" href="https://bit.ly/2YGEGCb" target="_blank" title="Follow me on Github">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path
+                d="M16 .395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182.8.148 1.094-.347 1.094-.77 0-.381-.015-1.642-.022-2.979-4.452.968-5.391-1.888-5.391-1.888-.728-1.849-1.776-2.341-1.776-2.341-1.452-.993.11-.973.11-.973 1.606.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33.143-1.034.558-1.74 1.016-2.14-3.554-.404-7.29-1.777-7.29-7.907 0-1.747.625-3.174 1.649-4.295-.166-.403-.714-2.03.155-4.234 0 0 1.344-.43 4.401 1.64a15.353 15.353 0 0 1 4.005-.539c1.359.006 2.729.184 4.008.539 3.054-2.07 4.395-1.64 4.395-1.64.871 2.204.323 3.831.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895.574.497 1.085 1.47 1.085 2.963 0 2.141-.019 3.864-.019 4.391 0 .426.288.925 1.099.768C27.421 29.457 32 23.462 32 16.395c0-8.837-7.164-16-16-16z">
+              </path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon-link" href="https://bit.ly/2KicMbz" target="_blank" title="Follow me on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <g id="surface1">
+                <path style=" stroke:none;fill-rule:nonzero;"
+                  d="M 25.332031 0 L 6.667969 0 C 2.984375 0 0 2.984375 0 6.667969 L 0 25.332031 C 0 29.015625 2.984375 32 6.667969 32 L 25.332031 32 C 29.015625 32 32 29.015625 32 25.332031 L 32 6.667969 C 32 2.984375 29.015625 0 25.332031 0 Z M 10.667969 25.332031 L 6.667969 25.332031 L 6.667969 10.667969 L 10.667969 10.667969 Z M 8.667969 8.976562 C 7.378906 8.976562 6.332031 7.921875 6.332031 6.625 C 6.332031 5.324219 7.378906 4.273438 8.667969 4.273438 C 9.953125 4.273438 11 5.324219 11 6.625 C 11 7.921875 9.957031 8.976562 8.667969 8.976562 Z M 26.667969 25.332031 L 22.667969 25.332031 L 22.667969 17.863281 C 22.667969 13.371094 17.332031 13.710938 17.332031 17.863281 L 17.332031 25.332031 L 13.332031 25.332031 L 13.332031 10.667969 L 17.332031 10.667969 L 17.332031 13.019531 C 19.195312 9.570312 26.667969 9.316406 26.667969 16.320312 Z M 26.667969 25.332031 " />
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
+
 </html>
